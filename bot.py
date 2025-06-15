@@ -44,7 +44,9 @@ files = glob.glob(ppath)
 JisshuBot.start()
 loop = asyncio.get_event_loop()
 
-pyrogram.utils.MIN_CHANNEL_ID = -1009147483647
+
+pyroutils.MIN_CHAT_ID = -999999999999
+pyroutils.MIN_CHANNEL_ID = -100999999999999
 
 async def Jisshu_start():
     print('\n')
