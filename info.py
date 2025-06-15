@@ -35,15 +35,15 @@ LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1001864434358'))
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1001864434358'))
 
 # MongoDB 
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://filterbot:filterbot@cluster0.ewxdd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_NAME = environ.get('DATABASE_NAME', "")
 
 # Files index database url
-FILES_DATABASE = environ.get('FILES_DATABASE', "mongodb+srv://filterbot:filterbot@cluster0.ewxdd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+FILES_DATABASE = environ.get('FILES_DATABASE', "")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'anonymous')
 
 # Other Channel's
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '--1002417761112'))
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002417761112'))
 DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','0'))
 request_channel = environ.get('REQUEST_CHANNEL', '-1001864434358') 
 REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(request_channel) else None
