@@ -800,14 +800,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "start":
         buttons = [[		
                 InlineKeyboardButton('⇋ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⇋', url=f'http://telegram.dog/{temp.U_NAME}?startgroup=start')		
-		],[
-		InlineKeyboardButton('• ᴅɪꜱᴀʙʟᴇ ᴀᴅꜱ •', callback_data='jisshupremium'),
-                InlineKeyboardButton('• ꜱᴘᴇᴄɪᴀʟ •', callback_data="special")
+		
+		
+                
                 ],[
                 InlineKeyboardButton("• ʜᴇʟᴘ •", callback_data='help'),
                 InlineKeyboardButton('• ᴀʙᴏᴜᴛ •', callback_data='about')
-		],[
-                InlineKeyboardButton('• ᴇᴀʀɴ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ •', callback_data='earn')
+		
+                
 	        ]] 
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_media(
