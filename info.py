@@ -43,14 +43,14 @@ FILES_DATABASE = environ.get('FILES_DATABASE', "mongodb+srv://filterbot:filterbo
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'anonymous')
 
 # Other Channel's
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1001864434358'))
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '--1002417761112'))
 DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','0'))
 request_channel = environ.get('REQUEST_CHANNEL', '-1001864434358') 
 REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(request_channel) else None
 MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1001864434358')) 
 
 # Added Link Here Not Id 
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/Jisshu_support')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+SkhQNBls1Ls0Y2Zl')
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/JisshuMovieZone')
 
 # Verification
